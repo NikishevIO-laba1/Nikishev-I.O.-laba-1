@@ -1,0 +1,25 @@
+ /*Веб-страница обязательно должна содержать:
+
+1) Изменить структуру страницы при изменении размера окна браузера (какие-то элементы на странице перестраиваются или перестают отображаться).
+
+2) Версию страницы для печати*/
+ body {color: white;background-color: black;}
+ 
+ @media (min-width: 1000px) {
+body {font-size: 20px; margin-left: 80px;}
+}
+
+@media (max-width: 800px) {
+body {font-size: 15px;}
+}
+
+@media (max-width: 600px) {
+body {font-size: 10px;}
+img{display:none;}
+}
+
+
+@media print {
+body {color: black;background-color: white; font: 14px Arial, sans-serif;}
+img{display:none;}
+}
