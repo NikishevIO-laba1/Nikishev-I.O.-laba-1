@@ -1,0 +1,30 @@
+ /*1) Минимум 3 разные анимации (разные анимации применяются к разным элементам на странице).
+2) Использование свойства CSS transform
+3) Использование свойства CSS transition
+4) Использование свойства CSS animation-direction
+5) Использование свойства CSS animation-delay
+6) Использование свойства CSS animation-play-state*/
+@keyframes transform {
+  from {transform: rotate(5deg);}
+  to {transform: rotate(105deg);}
+}
+
+img{animation-name: transform; animation-duration: 2s; animation-direction: reverse; animation-delay: 3s;}
+
+
+@keyframes transition {
+  from {transform: rotate(5deg);}
+  to {transform: rotate(105deg);}
+}
+
+a {font-size: 14px; transition-property: font-size; transition-duration: 1s;}
+a:hover{font-size: 36px;}
+
+
+@keyframes playstate {
+from { text-indent: 10%; }
+    to { text-indent: 30%; }
+
+}
+ul{animation-name:playstate; animation-duration: 1s; animation-direction: alternate; animation-iteration-count:10; }
+ul:hover {animation-name:playstate; animation-duration: 1s; animation-direction: alternate; animation-iteration-count:10; animation-play-state: paused;}
